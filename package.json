@@ -1,0 +1,29 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "swagger-headed": "npx cypress run --spec 'cypress/e2e/swagger/user_apicodes.cy.js' --browser chrome --headed",
+    "swagger-headless": "npx cypress run --spec 'cypress/e2e/swagger/user_apicodes.cy.js'",
+    "parabank-register-headed": "npx cypress run --spec 'cypress/e2e/parabank/register.cy.js' --browser chrome --headed",
+    "parabank-register-headless": "npx cypress run --spec 'cypress/e2e/parabank/register.cy.js'",
+    "parabank-open-headed": "npx cypress run --spec 'cypress/e2e/parabank/openaccount.cy.js' --browser chrome --headed",
+    "parabank-open-headless": "npx cypress run --spec 'cypress/e2e/parabank/openaccount.cy.js'",
+    "parabank-update-headed":"npx cypress run --spec 'cypress/e2e/parabank/updateinfo.cy.js' --browser chrome --headed",
+    "parabank-update-headless": "npx cypress run --spec 'cypress/e2e/parabank/updateinfo.cy.js'",
+    "parabank-logout-headed": "npx cypress run --spec 'cypress/e2e/parabank/logout.cy.js' --browser chrome --headed",
+    "parabank-logout-headless": "npx cypress run --spec 'cypress/e2e/parabank/logout.cy.js'"
+  },
+  "author": "Faye Abusaman",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cypress": "^14.5.1"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.9.0",
+    "cypress-downloadfile": "^1.2.4",
+    "cypress-mochawesome-reporter": "^4.0.0",
+    "cypress-plugin-api": "^2.11.2"
+  }
+}
