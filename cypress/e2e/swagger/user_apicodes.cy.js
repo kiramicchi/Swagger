@@ -97,8 +97,8 @@ describe('Swagger Petstore API Test Cases', function () {
             expect(response.status).to.eq(200);
             expect(response.headers['content-type']).to.include('application/json');
             expect(response.body).to.have.property('firstName', 'Faye');
-            expect(response.body).to.have.property('lastName', 'Abusaman');
-            expect(response.body).to.have.property('email', 'kira@gmail.com');
+            expect(response.body).to.have.property('lastName', 'Abillada');
+            expect(response.body).to.have.property('email', 'kira4@gmail.com');
             expect(response.body).to.have.property('password', 'kira123');
             expect(response.body).to.have.property('phone', '12141214');
             expect(response.body).to.have.property('userStatus', 1);
