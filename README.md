@@ -11,7 +11,7 @@ This project contains Cypress API test cases for the [Swagger Petstore API](http
 
 ### Installation
 
-1. Clone this repository:
+1. Clone this repository
 2. Install dependencies
 
 ### Running the Tests
