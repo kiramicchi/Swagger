@@ -21,9 +21,11 @@ This project contains Cypress API test cases for the [Swagger Petstore API](http
 To run the tests, enter the following lines in the Command Line Interface (Terminal):
 
 **1. Headed Mode**
+   
    npx cypress run --spec 'cypress/e2e/swagger/user_apicodes.cy.js' --browser chrome --headed
 
 **2. Headless Mode**
+   
    npx cypress run --spec 'cypress/e2e/swagger/user_apicodes.cy.js'
 
 ### Features
