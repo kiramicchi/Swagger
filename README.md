@@ -12,9 +12,6 @@ This project contains Cypress API test cases for the [Swagger Petstore API](http
 ### Installation
 
 1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/petstore-api-tests.git
-   cd petstore-api-tests
 2. Install dependencies
 
 ### Running the Tests
