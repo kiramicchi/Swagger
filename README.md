@@ -26,7 +26,7 @@ To run the tests, enter the following lines in the Command Line Interface (Termi
       npx cypress run --spec 'cypress/e2e/swagger/user_apicodes.cy.js'
 
 ### Features
--------------------------------------------------------------------------------------
+
 | Method   | Description                             | Endpoint                     |
 | -------- | --------------------------------------- | ---------------------------- |
 | `POST`   | Create a single user                    | `/user`                      |
@@ -36,7 +36,6 @@ To run the tests, enter the following lines in the Command Line Interface (Termi
 | `GET`    | Attempt to retrieve a non-existent user | `/user/thisUserDoesNotExist` |
 | `DELETE` | Delete an existing user                 | `/user/{username}`           |
 | `DELETE` | Delete a non-existent user              | `/user/kuromilol`            |
--------------------------------------------------------------------------------------
 
 ### Notes
 - **user_apicodes.cy.js** is the main test script.
