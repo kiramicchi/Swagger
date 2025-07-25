@@ -38,7 +38,7 @@ To run the tests, enter the following lines in the Command Line Interface (Termi
 | `DELETE` | Delete a non-existent user              | `/user/kuromilol`            |
 
 ### Notes
-- **user_apicodes.cy.js** is the main test script.
+- `user_apicodes.cy.js` is the main test script.
 - The test data includes 3 users: kiramii, krabbey, and kuromii.
 - Swagger Petstore is a public test API — no authentication required.
 - Delays (cy.wait(3000)) are added in beforeEach() to prevent rate-limiting or async issues.
