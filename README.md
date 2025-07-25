@@ -27,16 +27,16 @@ To run the tests, enter the following lines in the Command Line Interface (Termi
 
 ### Features
 
-| Method   | Description                             | Endpoint                     |
-| -------- | --------------------------------------- | ---------------------------- |
-| `POST`   | Create a single user                    | `/user`                      |
-| `POST`   | Create a list of users                  | `/user/createWithList`       |
-| `PUT`    | Update an existing user                 | `/user/{username}`           |
-| `PUT`    | Update a user with invalid data type    | `/user/{username}`           |
-| `GET`    | Retrieve a user by username             | `/user/{username}`           |
-| `GET`    | Attempt to retrieve a non-existent user | `/user/thisUserDoesNotExist` |
-| `DELETE` | Delete an existing user                 | `/user/{username}`           |
-| `DELETE` | Delete a non-existent user              | `/user/kuromilol`            |
+| Method   | Description                             | Endpoint                     | Status Code |
+| -------- | --------------------------------------- | ---------------------------- | ----------- |
+| `POST`   | Create a single user                    | `/user`                      | 200         |
+| `POST`   | Create a list of users                  | `/user/createWithList`       | 200         |
+| `PUT`    | Update an existing user                 | `/user/{username}`           | 200         |
+| `PUT`    | Update a user with invalid data type    | `/user/{username}`           | 500         |
+| `GET`    | Retrieve a user by username             | `/user/{username}`           | 200         |
+| `GET`    | Attempt to retrieve a non-existent user | `/user/thisUserDoesNotExist` | 404         |
+| `DELETE` | Delete an existing user                 | `/user/{username}`           | 200         |
+| `DELETE` | Delete a non-existent user              | `/user/kuromilol`            | 404         |
 
 ### Notes
 - `user_apicodes.cy.js` is the main test script.
