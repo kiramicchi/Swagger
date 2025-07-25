@@ -93,6 +93,31 @@ describe('Swagger Petstore API Test Cases', function () {
         });
     });
 
+    // PUT - Error 500
+    it('PUT - Update value with invalid data type', () => {
+        cy.request({
+            method: 'PUT',
+            url: 'https://petstore.swagger.io/v2/user/kiramii',
+            body: {
+                id: 1,
+                username: 'kiramii',
+                firstName: 'Faye',
+                lastName: 'Abusaman',
+                email: 'kira@gmail.com',
+                password: 'kira123',
+                phone: '12141214',
+                userStatus: "invalidString" // This causes a 500 on Swagger
+            },
+            failOnStatusCode: false, // let Cypress handle the 500
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then((response) => {
+            expect(response.status).to.eq(500);
+            expect(response.body).to.have.property('message');
+        });
+    });
+
     // GET - Get user by username
     it('GET - Get user by user name', function () {
         cy.request({
