@@ -32,6 +32,7 @@ To run the tests, enter the following lines in the Command Line Interface (Termi
 | `POST`   | Create a single user                    | `/user`                      |
 | `POST`   | Create a list of users                  | `/user/createWithList`       |
 | `PUT`    | Update an existing user                 | `/user/{username}`           |
+| `PUT`    | Update a user with invalid data type    | `/user/{username}`           |
 | `GET`    | Retrieve a user by username             | `/user/{username}`           |
 | `GET`    | Attempt to retrieve a non-existent user | `/user/thisUserDoesNotExist` |
 | `DELETE` | Delete an existing user                 | `/user/{username}`           |
