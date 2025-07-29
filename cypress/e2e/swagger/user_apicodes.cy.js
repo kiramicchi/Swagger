@@ -8,7 +8,7 @@ describe('Swagger Petstore API Test Cases', function () {
 
     // POST - Create user
     it('POST - Create user', function () {
-        cy.request({
+        cy.api({
             method: 'POST',
             url: 'https://petstore.swagger.io/v2/user',
             body:
@@ -34,7 +34,7 @@ describe('Swagger Petstore API Test Cases', function () {
 
     // POST - Create list of users
     it('POST - Create list of users - LIST', function () {
-        cy.request({
+        cy.api({
             method: 'POST',
             url: 'https://petstore.swagger.io/v2/user/createWithList',
             body: [
@@ -71,7 +71,7 @@ describe('Swagger Petstore API Test Cases', function () {
 
     // PUT - Update user
     it('PUT - Updated user', function () {
-        cy.request({
+        cy.api({
             method: 'PUT',
             url: 'https://petstore.swagger.io/v2/user/kiramii',
             body: {
@@ -95,7 +95,7 @@ describe('Swagger Petstore API Test Cases', function () {
 
     // PUT - Error 500
     it('PUT - Update value with invalid data type', () => {
-        cy.request({
+        cy.api({
             method: 'PUT',
             url: 'https://petstore.swagger.io/v2/user/kiramii',
             body: {
@@ -120,7 +120,7 @@ describe('Swagger Petstore API Test Cases', function () {
 
     // GET - Get user by username
     it('GET - Get user by user name', function () {
-        cy.request({
+        cy.api({
             method: 'GET',
             url: 'https://petstore.swagger.io/v2/user/kiramii',
             failOnStatusCode: false
@@ -133,7 +133,7 @@ describe('Swagger Petstore API Test Cases', function () {
 
     // GET - Login a non-existent user
     it('GET - Login a non-existent user', function () {
-        cy.request({
+        cy.api({
             method: 'GET',
             url: 'https://petstore.swagger.io/v2/user/thisUserDoesNotExist',
             failOnStatusCode: false
@@ -145,7 +145,7 @@ describe('Swagger Petstore API Test Cases', function () {
 
     // DELETE - Delete existing user
     it('DELETE - Delete existing user', function () {
-        cy.request({
+        cy.api({
             method: 'DELETE',
             url: 'https://petstore.swagger.io/v2/user/kiramii',
             headers: {
@@ -160,7 +160,7 @@ describe('Swagger Petstore API Test Cases', function () {
 
     // DELETE - Delete non-existing user
     it('DELETE - Delete non-existing user', function () {
-        cy.request({
+        cy.api({
             method: 'DELETE',
             url: 'https://petstore.swagger.io/v2/user/kuromilol',
             headers: {
